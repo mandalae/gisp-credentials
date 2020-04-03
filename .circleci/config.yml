@@ -67,7 +67,7 @@ jobs:
           command: unzip terraform.zip; export PATH=`pwd`:$PATH; echo $PATH; ls -la;
       - run:
           name: Build artifacts
-          command: npm run deploy
+          command: npm run deploy:sdlc
 
 workflows:
   version: 2
